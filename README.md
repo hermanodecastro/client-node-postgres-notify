@@ -1,3 +1,5 @@
 # client-node-postgres-notify
 
-Run `npm install`
+## Run application 
+* `npm install`
+* `npm start`
