@@ -14,7 +14,7 @@ client.connect();
 
 console.log("Database connected");
 
-client.query('LISTEN blockchain');
+client.query('LISTEN channel');
 
 client.on('notification', function(data) {
     console.log(data.payload);
