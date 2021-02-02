@@ -16,6 +16,7 @@ console.log("Database connected");
 
 client.query('LISTEN channel');
 
-client.on('notification', function(data) {
-    console.log(data.payload);
+client.on('notification', async (data) => {
+	const payload = JSON.parse(data.payload);
+	console.log(payload)
 });
